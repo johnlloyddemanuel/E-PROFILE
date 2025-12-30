@@ -1,0 +1,279 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Johnlloyd | Portfolio</title>
+
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- ICONS (LOGOS) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+ 
+/* BODY BACKGROUND */
+body{
+  background: linear-gradient(160deg,#01311F,#3D441E,#6D712E);
+  color:#F3F2ED;
+  line-height:1.7;
+}
+
+/* SECTIONS */
+section{
+  max-width:1100px;
+  margin:50px auto;
+  padding:60px 25px;
+  background:rgba(0,0,0,0.2);
+  border-radius:20px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.4);
+  backdrop-filter: blur(6px);
+}
+
+/* HEADINGS */
+h1{
+  color:#C6AA58;
+  margin-bottom:20px;
+  font-weight:500;
+}
+
+/* HERO */
+.hero{
+  text-align:center;
+}
+
+.profile-pic{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  border:4px solid #C6AA58;
+  object-fit:cover;
+  margin-bottom:15px;
+}
+
+.hero h1{
+  color:#A2A569;
+  font-weight:600;
+}
+
+.tagline{
+  margin-top:8px;
+  color:#F3F2ED;
+}
+
+/* SKILLS GRID */
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:rgba(62, 68, 30,0.5);
+  padding:22px;
+  border-radius:15px;
+  border-left:5px solid #C6AA58;
+}
+
+.card h3{
+  color:#C6AA58;
+  margin-bottom:10px;
+  font-weight:500;
+}
+
+.card ul li{
+  margin-bottom:6px;
+  font-size:0.95rem;
+  color:#F3F2ED;
+}
+
+/* ACHIEVEMENTS & PROJECTS */
+.achievements{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:18px;
+}
+
+.achievements img{
+  width:100%;
+  border-radius:14px;
+  box-shadow:0 12px 25px rgba(0,0,0,0.5);
+  transition:transform 0.3s ease;
+  object-fit:cover;
+}
+
+.achievements img:hover{
+  transform:scale(1.05);
+}
+
+/* CONTACT ICONS */
+.socials a{
+  display:inline-block;
+  margin-right:15px;
+  font-size:1.5rem;
+  color:#C6AA58;
+  transition:0.3s;
+}
+
+.socials a:hover{
+  color:#A2A569;
+  transform:translateY(-3px);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:25px;
+  color:#F3F2ED;
+  font-size:0.9rem;
+}
+
+/* ANIMATION */
+.reveal{
+  opacity:0;
+  transform:translateY(50px);
+  transition:0.9s ease;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero reveal">
+  <img src="https://scontent.fdvo6-1.fna.fbcdn.net/v/t39.30808-6/605595307_122185010168500823_2991818349485781883_n.jpg?_nc_cat=111&_nc_cb=99be929b-ad57045b&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeH3x74qmdH1qqGMYHxCcGEm8LOhLDH-0tTws6EsMf7S1B6h9bF6Ys3AilzoNi2rcowa7maupWRFwQNjZyfYZXsQ&_nc_ohc=J0_tKXXjoYEQ7kNvwG1ibC5&_nc_oc=Adkg1BW6I9NzpO7w9nSkPGbCPnG26wx-7Rjma-2lPX_cuqyAX-OegWOUcvhc_7e4BBk&_nc_zt=23&_nc_ht=scontent.fdvo6-1.fna&_nc_gid=yYDyouPs-HKxroCKqj2cWg&oh=00_AfmRtXhD0dN6RD0beVuzj2FlVqlxS_UJD61JdbWop2FPew&oe=6959BB0A" class="profile-pic" alt="Profile">
+  <h1>Johnlloyd De Manuel</h1>
+  <p class="tagline">Computer Science Student | Aspiring Web Developer</p>
+</section>
+
+<!-- ABOUT -->
+<section class="reveal">
+  <h1>About Me</h1>
+  <p>
+    I am a Computer Science student with a strong interest in web development, digital design, and continuous 
+    learning. I focus on creating clean, user-friendly, and visually appealing interfaces by improving UI 
+    structure and refining layouts. I continuously enhance my skills by exploring new technologies and applying
+    them to practical and functional web projects. A portfolio is a compilation of academic and professional materials that exemplifies your beliefs, skills, qualifications, education, training, and experiences.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section class="reveal">
+  <h1>Skills</h1>
+  <div class="skills-grid">
+
+    <div class="card">
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>HTML5 & CSS3</li>
+        <li>JavaScript (Basic)</li>
+        <li>Python (Basic)</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Editing & Digital Skills</h3>
+      <ul>
+        <li>Basic Photo Editing</li>
+        <li>Layout & Design Editing</li>
+        <li>UI Cleanup & Improvement</li>
+        <li>Content Formatting</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Attention to Detail</li>
+        <li>Time Management</li>
+        <li>Team Collaboration</li>
+        <li>Fast Learner</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section class="reveal">
+  <h1>Achievements & Certifications</h1>
+  <div class="achievements">
+    <img src="https://scontent.fdvo6-1.fna.fbcdn.net/v/t39.30808-6/607767812_122185028258500823_3992094702630765039_n.jpg?_nc_cat=100&_nc_cb=99be929b-ad57045b&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHglwtLC4JH8F34DQy1bWay7nzuglonQLvufO6CWidAuwVmAeo6OuSCt9jn2mgmrr9fH6DdVFssaABymIa3gO-A&_nc_ohc=SUVrvNEWoQIQ7kNvwGl37UH&_nc_oc=AdngW6b8E61zwhfYctXjR8bTgxuLpzdz9X4k_ou2pYrHwi0verOmbPpIXyCv1L3nyxw&_nc_zt=23&_nc_ht=scontent.fdvo6-1.fna&_nc_gid=jxMl1NKn9arNPxrOd0lAdg&oh=00_Afmu4L8rOFuvjmSljUSrf_u6My_Xu6p5kViiF3kqppy_HA&oe=6959B572">
+    <img src="https://scontent.fdvo6-1.fna.fbcdn.net/v/t39.30808-6/603849022_122185028654500823_3870137099175318205_n.jpg?_nc_cat=104&_nc_cb=99be929b-ad57045b&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEKxwoc48q8ZG5yAAHNR_zTVbZrVKP95ehVtmtUo_3l6BNxRqUhPudAVhaxULqK64WDdZgfqRLvEAlSi3eYSEPr&_nc_ohc=T9CsyaY0HgkQ7kNvwFX5vWj&_nc_oc=Adng2UxM2CdFoF1f34HBRjj8AjpTBq-ktLbfDJ3DIgyP4NponqiXGCP2OBJs25i4Wko&_nc_zt=23&_nc_ht=scontent.fdvo6-1.fna&_nc_gid=KCfFDUsMVRDj1gDLtJIfLQ&oh=00_AflyStWMhFN5ce0TSjcoxrl5VCUVpKehy7Y1Rg4MwnbXbg&oe=6959BDB7">
+    <img src="https://scontent.fdvo6-1.fna.fbcdn.net/v/t39.30808-6/606199042_122185028714500823_485139689658334030_n.jpg?_nc_cat=104&_nc_cb=99be929b-ad57045b&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEH56SyjYkXMAC9ds_8VwAVS9S3vXTz8thL1Le9dPPy2DZiuloi3E7kkP8ao0QSi2hzDPcxXg1YBOiXaiRZdLnx&_nc_ohc=AVhKRCBS-LoQ7kNvwEGcDZd&_nc_oc=Adm9upKKJsLPQpBHfcvnsQLAfImNFlreYXHEmVNkVaCvVZ6819dHlh1kNhNwAH3kFN0&_nc_zt=23&_nc_ht=scontent.fdvo6-1.fna&_nc_gid=CW_qwHilUJFpxmHkgJHicQ&oh=00_Aflx1WQxZwRYfgNxUWLU7AA7e-lzXEn8yuw8-J5HKvo35g&oe=6959B993">
+    <img src="https://scontent.fdvo6-1.fna.fbcdn.net/v/t39.30808-6/607704648_122185028720500823_7380119104485247148_n.jpg?_nc_cat=109&_nc_cb=99be929b-ad57045b&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHlHuMXEwN09TMZWi_-6BnnIJY5gqhBxFQgljmCqEHEVLBsKjbaiXnqlsGnib7iYsM2zy5KQj1-2JrZk8rGCTqF&_nc_ohc=OwmBcOsJ-ocQ7kNvwHRi-Uo&_nc_oc=Adlj-09Cyzo9hVyB-WsQUtRrpDWtTDGDQx-16oj28LcXvjMpW7QGzkZAhW1hf05dw-Q&_nc_zt=23&_nc_ht=scontent.fdvo6-1.fna&_nc_gid=-I-d7tgv_qY9FagTN7OI1Q&oh=00_Aflf5ZfMjG4_EetzQBVz5NL5UhxLnrPHAyy2IWlcl2OtQg&oe=6959B7B5">
+  </div>
+  <p style="margin-top:15px;font-size:0.95rem;">
+    Certificates earned from Kaggle and other online platforms related to
+    programming, data fundamentals, and technology skills.
+  </p>
+</section>
+
+<!-- EDUCATION -->
+<section class="reveal">
+  <h1>Education</h1>
+  <div class="achievements">
+    <img src="https://www.bing.com/th/id/OIP.fu6pMkn2Y21Wg2AZUwPaCwHaE8?w=242&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" 
+         alt="Education Image" 
+         style="width:100%; max-width:500px; height:250px; border-radius:12px; object-fit:cover;">
+  </div>
+  <p style="margin-top:15px;font-size:0.95rem;">
+    <strong>Bachelor of Science in Computer Science</strong><br>
+    Sultan Kudarat State University
+  </p>
+</section>
+
+<section class="reveal">
+  <h1>Hobbies & Interests</h1>
+  <p>
+    I enjoy creating digital art and exploring photography. Gaming is one of my favorite ways 
+    to relax and challenge my strategic thinking. I am passionate about learning new technologies 
+    and staying up-to-date with emerging trends. In my free time, I like to explore web design and 
+    improve my understanding of UI/UX principles. I also enjoy experimenting with small projects that 
+    combine creativity and technical skills.
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section class="reveal">
+  <h1>Contact</h1>
+  <p>Email: johnlloyddemanuel785@gmail.com</p>
+  <p>GitHub: <a href="https://github.com/" target="_blank">johnlloyddemanuel785</a></p>
+  <p>Facebook: <a href="https://facebook.com/" target="_blank">Lloyd De Manuel</a></p>
+
+  <div class="socials" style="margin-top:10px;">
+    <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+</section>
+
+<footer>
+  © 2025 Johnlloyd De Manuel Portfolio
+</footer>
+
+<script>
+const reveals = document.querySelectorAll(".reveal");
+window.addEventListener("scroll",()=>{
+  reveals.forEach(sec=>{
+    const top = sec.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100){
+      sec.classList.add("active");
+    }
+  });
+});
+</script>
+
+</body>
+</html>
